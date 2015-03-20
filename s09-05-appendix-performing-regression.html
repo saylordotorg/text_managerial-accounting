@@ -1,0 +1,1856 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Appendix: Performing Regression Analysis with Excel</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s09-04-the-relevant-range-and-nonline.html"><img src="shared/images/batch-left.png"></a> <a href="s09-04-the-relevant-range-and-nonline.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s10-00-how-is-cost-volume-profit-anal.html">Next Section</a> <a href="s10-00-how-is-cost-volume-profit-anal.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="heisinger_1.0-ch05_s05" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">5.5</span> Appendix: Performing Regression Analysis with Excel</h2>
+    <div class="learning_objectives editable block" id="heisinger_1.0-ch05_s05_n01">
+        <h3 class="title">Learning Objective</h3>
+        <ol class="orderedlist" id="heisinger_1.0-ch05_s05_l01" numeration="arabic">
+            <li>Perform regression analysis using Excel.</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="heisinger_1.0-ch05_s05_p01"><em class="emphasis">Question: Regression analysis is often performed to estimate fixed and variable costs. Many different software packages have the capability of performing regression analysis, including Excel. This appendix provides a basic illustration of how to use Excel to perform regression analysis. Statistics courses cover this topic in more depth. </em><em class="emphasis bolditalic">How is regression analysis used to estimate fixed and variable costs?</em></p>
+    <p class="para block"> </p>
+    <p class="para editable block" id="heisinger_1.0-ch05_s05_p02">Answer: As noted in the chapter, regression analysis uses a series of mathematical equations to find the best possible fit of the line to the data points. For the purposes of this chapter, the end goal of regression analysis is to estimate fixed and variable costs, which are described in the equation form of Y = <em class="emphasis">f</em> + <em class="emphasis">v</em>X. Recall that the following Excel output was provided earlier in the chapter based on the data presented in <a class="xref" href="heisinger_1.0-ch05_s02#heisinger_1.0-ch05_s02_s02_t01">Table 5.4 "Monthly Production Costs for Bikes Unlimited"</a> for Bikes Unlimited.</p>
+    <div class="informaltable block" frame="none">
+        <table cellpadding="0" cellspacing="0">
+            <tbody>
+                <tr>
+                    <td align="right"></td>
+                    <td align="right">Coefficients</td>
+                </tr>
+                <tr>
+                    <td align="right">
+<em class="emphasis">y</em>-intercept</td>
+                    <td align="right">43,276</td>
+                </tr>
+                <tr>
+                    <td align="right">
+<em class="emphasis">x</em> variable</td>
+                    <td align="right">53.42</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p class="para editable block" id="heisinger_1.0-ch05_s05_p03">The resulting equation to estimate production costs is Y = $43,276 + $53.42X. We now describe the steps to be performed in Excel to get this equation.</p>
+    <p class="para block"> </p>
+    <p class="para editable block" id="heisinger_1.0-ch05_s05_p98"><strong class="emphasis bold">Step 1. Confirm that the Data Analysis package is installed.</strong></p>
+    <p class="para editable block" id="heisinger_1.0-ch05_s05_p04">Go to the <em class="emphasis">Data</em> tab on the top menu bar and look for <em class="emphasis">Data Analysis</em>. If <em class="emphasis">Data Analysis</em> appears, you are ready to perform regression analysis.  If <em class="emphasis">Data Analysis</em> does not appear, go to the help button (denoted as a question mark in the upper right-hand corner of the screen) and type <em class="emphasis">Analysis ToolPak</em>. Look for the <em class="emphasis">Load the Analysis ToolPak</em> option and follow the instructions given.</p>
+    <p class="para block"> </p>
+    <p class="para editable block" id="heisinger_1.0-ch05_s05_p06"><strong class="emphasis bold">Step 2. Enter the data in the spreadsheet.</strong></p>
+    <p class="para editable block" id="heisinger_1.0-ch05_s05_p07">Using a new Excel spreadsheet, enter the data points in two columns. The monthly data in <a class="xref" href="heisinger_1.0-ch05_s02#heisinger_1.0-ch05_s02_s02_t01">Table 5.4 "Monthly Production Costs for Bikes Unlimited"</a> includes <em class="emphasis">Total Production Costs</em> and <em class="emphasis">Units Produced</em>. Thus use one column (column A) to enter Total Production Costs data and another column (column B) to enter Units Produced data.</p>
+    <div class="informalfigure large block">
+        <img src="section_09/8083f597aa3ce30a2417449b688c38a6.jpg">
+    </div>
+    <p class="para block"> </p>
+    <p class="para editable block" id="heisinger_1.0-ch05_s05_p08"><strong class="emphasis bold">Step 3. Run the regression analysis.</strong></p>
+    <p class="para editable block" id="heisinger_1.0-ch05_s05_p09">Using the same spreadsheet set up in step 2, select <em class="emphasis">Data</em>, <em class="emphasis">Data Analysis</em>, and <em class="emphasis">Regression.</em> A box appears that requires the input of several items needed to perform regression. <em class="emphasis">Input Y Range</em> requires that you highlight the <em class="emphasis">y</em>-axis data, including the heading (cells B1 through B13 in the example shown in step 2). <em class="emphasis">Input X Range</em> requires that you highlight the <em class="emphasis">x</em>-axis data, including the heading (cells C1 through C13 in the example shown in step 2). Check the <em class="emphasis">Labels</em> box; this indicates that the top of each column has a heading (B1 and C1). Select <em class="emphasis">New Workbook</em>; this will put the regression results in a new workbook. Lastly, check the <em class="emphasis">Line Fit Plots</em> box, then select <em class="emphasis">OK</em>. The result is as follows (note that we made a few minor format changes to allow for a better presentation of the data).</p>
+    <div class="informalfigure large block">
+        <img src="section_09/0dd0b575261a16a466366298234c3826.jpg">
+    </div>
+    <p class="para block"> </p>
+    <p class="para editable block" id="heisinger_1.0-ch05_s05_p10"><strong class="emphasis bold">Step 4. Analyze the output.</strong></p>
+    <p class="para editable block" id="heisinger_1.0-ch05_s05_p11">Here, we discuss key items shown in the regression output provided in step 3.</p>
+    <ul class="itemizedlist block" id="heisinger_1.0-ch05_s05_l02">
+        <li>
+            <p class="para"><strong class="emphasis bold">Cost Equation:</strong> The output shows that estimated fixed costs (shown as the <em class="emphasis">Intercept</em> coefficient in cell B17) total $43,276, and the estimated variable cost per unit (shown as the <em class="emphasis">Units Produced</em> coefficient in B18) is $53.42. Thus the cost equation is:</p>
+            <span class="informalequation"><span class="mathphrase">Y = $43,276 + $53.42X</span></span>
+            <span class="informalequation"><span class="mathphrase">or</span></span>
+            <span class="informalequation"><span class="mathphrase">Total Production Costs = $43,276 + ($53.42 × Units Produced)</span></span>
+        </li>
+        <li>
+<strong class="emphasis bold">Line Fit Plot and R-Squared:</strong> The plot shows that actual <em class="emphasis">total production costs</em> are very close to <em class="emphasis">predicted total production costs</em> calculated using the cost equation. Thus the cost equation created from the regression analysis is likely to be useful in predicting total production costs. Another way to assess the accuracy of the regression output is to review the <em class="emphasis">R-squared</em> statistic shown in cell B5. <span class="margin_term"><a class="glossterm">R-squared</a><span class="glossdef">Measures the percent of the variance in the dependent variable explained by the independent variable.</span></span> measures the percent of the variance in the dependent variable (<em class="emphasis">total production costs</em>, in this example) explained by the independent variable (<em class="emphasis">units produced</em>, in this example). According to the output, 96.29 percent of the variance in total production costs is explained by the level of units produced—further evidence that the regression results will be useful in predicting total production costs.</li>
+    </ul>
+    <p class="para editable block" id="heisinger_1.0-ch05_s05_p13">The discussion of regression analysis in this chapter is meant to serve as an introduction to the topic. To further enhance your knowledge of regression analysis and to provide for a more thorough analysis of the data, you should pursue the topic in an introductory statistics course.</p>
+    <div class="key_takeaways editable block" id="heisinger_1.0-ch05_s05_n02">
+        <h3 class="title">Key Takeaway</h3>
+        <ul class="itemizedlist" id="heisinger_1.0-ch05_s05_l03">
+            <li>
+                <p class="para">Software applications, such as Excel, can use regression analysis to estimate fixed and variable costs.</p>
+                <ul class="itemizedlist" id="heisinger_1.0-ch05_s05_l04">
+                    <li>Once the data analysis package is installed, historical data are entered in the spreadsheet, and the regression analysis is run.</li>
+                    <li>The resulting data are used to determine the cost equation, which includes estimated fixed and variable costs.</li>
+                </ul>
+                <p class="para" id="heisinger_1.0-ch05_s05_p14">The line fit plot and R-squared statistic are used to assess the usefulness of the cost equation in estimating costs.</p>
+            </li>
+        </ul>
+    </div>
+    <div class="exercises block" id="heisinger_1.0-ch05_s05_n03">
+        <h3 class="title">Review Problem 5.9</h3>
+        <p class="para" id="heisinger_1.0-ch05_s05_p15">Refer to the monthly production cost data for Alta Production, Inc., in <a class="xref" href="heisinger_1.0-ch05_s02#heisinger_1.0-ch05_s02_s04_n01">Note 5.21 "Review Problem 5.5"</a>. Use the four steps of regression analysis described in this appendix to estimate total fixed costs and variable cost per unit. State your results in the equation form Y = <em class="emphasis">f</em> + <em class="emphasis">v</em>X.</p>
+        <p class="simpara">Solution to Review Problem 5.9</p>
+        <p class="para" id="heisinger_1.0-ch05_s05_p16">Regression analysis performed using Excel results in the following output:</p>
+        <div class="informaltable" frame="none">
+            <table cellpadding="0" cellspacing="0">
+                <tbody>
+                    <tr>
+                        <td align="right"></td>
+                        <td align="right">Coefficients</td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+<em class="emphasis">y</em>-intercept</td>
+                        <td align="right">703</td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+<em class="emphasis">x</em> variable</td>
+                        <td align="right">1,442.97</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="para" id="heisinger_1.0-ch05_s05_p17">Thus the total cost equation is:</p>
+        <span class="informalequation"><span class="mathphrase">Y = $703 + $1,442.97X</span></span>
+    </div>
+    <div class="exercises block" id="heisinger_1.0-ch05_s05_n04">
+        <h3 class="title">End-of-Chapter Exercises</h3>
+        <p class="simpara">Questions</p>
+        <ol class="orderedlist" id="heisinger_1.0-ch05_s05_l05" numeration="arabic">
+            <li>What is a fixed cost? Provide two examples.</li>
+            <li>What is the difference between a committed fixed cost and a discretionary fixed cost? Provide examples of each.</li>
+            <li>What is a variable cost? Provide two examples.</li>
+            <li>What is a mixed cost? Provide two examples.</li>
+            <li>Describe the variables in the cost equation Y = <em class="emphasis">f</em> + <em class="emphasis">v</em>X.</li>
+            <li>How is the cost equation Y = <em class="emphasis">f</em> + <em class="emphasis">v</em>X used to estimate future costs?</li>
+            <li>Why is it important to identify how costs behave with changes in activity?</li>
+            <li>Review <a class="xref" href="heisinger_1.0-ch05_s01#heisinger_1.0-ch05_s01_s04_s03_n01">Note 5.11 "Business in Action 5.2"</a> Why was the school district’s administration surprised to find out that cost savings from closing a school would be much lower than initially anticipated?</li>
+            <li>Explain how account analysis is used to estimate costs.</li>
+            <li>Describe the four steps of the high-low method and how these steps are used to estimate costs.</li>
+            <li>Why might the high-low method lead to inaccurate results?</li>
+            <li>Describe the five steps of the scattergraph method and how these steps are used to estimate costs.</li>
+            <li>How can the scattergraph method be used to identify unusual data points?</li>
+            <li>Describe how regression analysis is used to estimate costs.</li>
+            <li>How does the contribution margin income statement differ from the traditional income statement?</li>
+            <li>Review <a class="xref" href="heisinger_1.0-ch05_s03#heisinger_1.0-ch05_s03_n02">Note 5.27 "Business in Action 5.3"</a> Which costs at <strong class="emphasis bold">Lowe’s</strong> are likely to be variable costs?</li>
+            <li>Describe the term <em class="emphasis">relevant range</em>. Why is it important to stay within the relevant range when estimating costs?</li>
+            <li>Explain how some costs can behave in a nonlinear way.</li>
+        </ol>
+        <p class="simpara">Brief Exercises</p>
+        <ol class="orderedlist" id="heisinger_1.0-ch05_s05_l07" start="19">
+            <li>
+<strong class="emphasis bold">Planning at Bikes Unlimited.</strong> Refer to the dialogue at Bikes Unlimited presented at the beginning of the chapter. What is the first step to be taken by Susan and her accounting staff to help in estimating profit for August?</li>
+            <li>
+                <p class="para"><strong class="emphasis bold">Identifying Cost Behavior.</strong> Vasquez Incorporated is trying to identify the cost behavior of the three costs that follow. Cost information is provided for three months.</p>
+                <div class="informaltable" frame="all">
+                    <table cellpadding="0" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th align="right"></th>
+                                <th align="right"></th>
+                                <th colspan="2" align="right">Cost A</th>
+                                <th colspan="2" align="right">Cost B</th>
+                                <th colspan="2" align="right">Cost C</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td align="right"><strong class="emphasis bold">Month</strong></td>
+                                <td align="right"><strong class="emphasis bold">Units Produced</strong></td>
+                                <td align="right"><strong class="emphasis bold">Total Costs</strong></td>
+                                <td align="right"><strong class="emphasis bold">Cost per Unit</strong></td>
+                                <td align="right"><strong class="emphasis bold">Total Costs</strong></td>
+                                <td align="right"><strong class="emphasis bold">Cost per Unit</strong></td>
+                                <td align="right"><strong class="emphasis bold">Total Costs</strong></td>
+                                <td align="right"><strong class="emphasis bold">Cost per Unit</strong></td>
+                            </tr>
+                            <tr>
+                                <td align="right">1</td>
+                                <td align="right">1,500</td>
+                                <td align="right">$1,500</td>
+                                <td align="right">_____</td>
+                                <td align="right">$4,500</td>
+                                <td align="right">_____</td>
+                                <td align="right">$3,000</td>
+                                <td align="right">_____</td>
+                            </tr>
+                            <tr>
+                                <td align="right">2</td>
+                                <td align="right">3,000</td>
+                                <td align="right">1,500</td>
+                                <td align="right">_____</td>
+                                <td align="right">5,250</td>
+                                <td align="right">_____</td>
+                                <td align="right">6,000</td>
+                                <td align="right">_____</td>
+                            </tr>
+                            <tr>
+                                <td align="right">3</td>
+                                <td align="right">750</td>
+                                <td align="right">1,500</td>
+                                <td align="right">_____</td>
+                                <td align="right">3,750</td>
+                                <td align="right">_____</td>
+                                <td align="right">1,500</td>
+                                <td align="right">_____</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="para" id="heisinger_1.0-ch05_s05_p18"><em class="emphasis">Required:</em></p>
+                <ol class="orderedlist" id="heisinger_1.0-ch05_s05_l08" numeration="loweralpha">
+                    <li>Calculate the cost per unit, and then identify how the cost behaves for each of the three costs (fixed, variable, or mixed). Explain the reasoning for your answers.</li>
+                    <li>How does identifying cost behavior patterns help managers?</li>
+                </ol>
+            </li>
+            <li>
+                <p class="para"><strong class="emphasis bold">Account Analysis.</strong> Cordova Company would like to estimate production costs on an annual basis. Costs incurred for direct materials and direct labor are variable costs. The accounting records indicate that the following production costs were incurred last year for 50,000 units.</p>
+                <div class="informaltable" frame="none">
+                    <table cellpadding="0" cellspacing="0">
+                        <tbody>
+                            <tr>
+                                <td>Direct materials</td>
+                                <td>$100,000</td>
+                            </tr>
+                            <tr>
+                                <td>Direct labor</td>
+                                <td>$215,000</td>
+                            </tr>
+                            <tr>
+                                <td>Manufacturing overhead</td>
+                                <td>$300,000 (20 percent fixed; 80 percent variable)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="para" id="heisinger_1.0-ch05_s05_p19"><em class="emphasis">Required:</em></p>
+                <p class="para" id="heisinger_1.0-ch05_s05_p20">Use account analysis to estimate the fixed costs per year, and the variable cost per unit.</p>
+            </li>
+            <li>
+                <p class="para"><strong class="emphasis bold">High-Low Method.</strong> The city of Rockville reported the following annual cost data for maintenance work performed on its fleet of trucks.</p>
+                <div class="informaltable" frame="all">
+                    <table cellpadding="0" cellspacing="0">
+                        <tbody>
+                            <tr>
+                                <td align="right"><strong class="emphasis bold">Reporting Period (Year)</strong></td>
+                                <td align="right"><strong class="emphasis bold">Total Costs</strong></td>
+                                <td align="right"><strong class="emphasis bold">Level of Activity (Miles Driven)</strong></td>
+                            </tr>
+                            <tr>
+                                <td align="right">Year 1</td>
+                                <td align="right">$   750,000</td>
+                                <td align="right">225,000</td>
+                            </tr>
+                            <tr>
+                                <td align="right">Year 2</td>
+                                <td align="right">850,000</td>
+                                <td align="right">240,000</td>
+                            </tr>
+                            <tr>
+                                <td align="right">Year 3</td>
+                                <td align="right">1,100,000</td>
+                                <td align="right">430,000</td>
+                            </tr>
+                            <tr>
+                                <td align="right">Year 4</td>
+                                <td align="right">1,150,000</td>
+                                <td align="right">454,000</td>
+                            </tr>
+                            <tr>
+                                <td align="right">Year 5</td>
+                                <td align="right">1,250,000</td>
+                                <td align="right">560,000</td>
+                            </tr>
+                            <tr>
+                                <td align="right">Year 6</td>
+                                <td align="right">1,550,000</td>
+                                <td align="right">710,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="para" id="heisinger_1.0-ch05_s05_p21"><em class="emphasis">Required:</em></p>
+                <ol class="orderedlist" id="heisinger_1.0-ch05_s05_l09" numeration="loweralpha">
+                    <li>Use the four steps of the high-low method to estimate total fixed costs per year and the variable cost per mile. State your results in the cost equation form Y = <em class="emphasis">f</em> + <em class="emphasis">v</em>X.</li>
+                    <li>What would the estimated costs be if the trucks drove 500,000 miles in year 7?</li>
+                </ol>
+            </li>
+            <li>
+                <p class="para"><strong class="emphasis bold">Scattergraph Method.</strong> Refer to the data in Brief Exercise 22 for the city of Rockville.</p>
+                <p class="para" id="heisinger_1.0-ch05_s05_p22"><em class="emphasis">Required:</em></p>
+                <ol class="orderedlist" id="heisinger_1.0-ch05_s05_l10" numeration="loweralpha">
+                    <li>Use the five steps of the scattergraph method to estimate total fixed costs per year and the variable cost per mile. State your results in the cost equation form Y = <em class="emphasis">f</em> + <em class="emphasis">v</em>X by filling in the dollar amounts for <em class="emphasis">f</em> and <em class="emphasis">v</em>.</li>
+                    <li>What would the estimated costs be if the trucks drove 500,000 miles in year 7?</li>
+                </ol>
+            </li>
+            <li>
+                <p class="para"><strong class="emphasis bold">Regression Analysis.</strong> Regression analysis was run using the data in Brief Exercise 22 for the city of Rockville. The output is shown here:</p>
+                <div class="informaltable" frame="none">
+                    <table cellpadding="0" cellspacing="0">
+                        <tbody>
+                            <tr>
+                                <td align="right"></td>
+                                <td align="right">Coefficients</td>
+                            </tr>
+                            <tr>
+                                <td align="right">
+<em class="emphasis">y</em>-intercept</td>
+                                <td align="right">441,013</td>
+                            </tr>
+                            <tr>
+                                <td align="right">
+<em class="emphasis">x</em> variable</td>
+                                <td align="right">1.53</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="para" id="heisinger_1.0-ch05_s05_p23"><em class="emphasis">Required:</em></p>
+                <ol class="orderedlist" id="heisinger_1.0-ch05_s05_l11" numeration="loweralpha">
+                    <li>Use the regression output to develop the cost equation Y = <em class="emphasis">f</em> + <em class="emphasis">v</em>X by filling in the dollar amounts for <em class="emphasis">f</em> and <em class="emphasis">v</em>.</li>
+                    <li>What would the city of Rockville’s estimated costs be if its trucks drove 500,000 miles in year 7?</li>
+                </ol>
+            </li>
+            <li>
+                <p class="para"><strong class="emphasis bold">Contribution Margin Income Statement.</strong> Last year Pod Products, Inc., sold its product for $250 per unit. Production costs totaled $40,000 (25 percent fixed, 75 percent variable). Selling and administrative costs totaled $150,000 (10 percent fixed, 90 percent variable). Pod Products produced and sold 1,000 units last year.</p>
+                <p class="para" id="heisinger_1.0-ch05_s05_p24"><em class="emphasis">Required:</em></p>
+                <p class="para" id="heisinger_1.0-ch05_s05_p25">Prepare a contribution margin income statement for Pod Products, Inc.</p>
+            </li>
+            <li>
+                <p class="para"><strong class="emphasis bold">Relevant Range.</strong> Jersey Company produces jerseys for athletic teams, and typically produces between 1,000 and 5,000 jerseys annually. The accountant is asked to estimate production costs for this coming year assuming 9,000 jerseys will be produced.</p>
+                <p class="para" id="heisinger_1.0-ch05_s05_p26"><em class="emphasis">Required:</em></p>
+                <p class="para" id="heisinger_1.0-ch05_s05_p27">What is meant by the term <em class="emphasis">relevant range</em>, and why is the relevant range important for estimating production costs for this coming year at Jersey Company?</p>
+            </li>
+        </ol>
+        <p class="simpara">Exercises: Set A</p>
+        <ol class="orderedlist" id="heisinger_1.0-ch05_s05_l12" start="27">
+            <li>
+                <p class="para"><strong class="emphasis bold">Identifying Cost Behavior.</strong> Zhang Corporation is trying to identify the cost behavior of the three costs shown. Cost information is provided for six months.</p>
+                <div class="informaltable" frame="all">
+                    <table cellpadding="0" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th align="right"></th>
+                                <th align="right"></th>
+                                <th colspan="2" align="right">Cost 1</th>
+                                <th colspan="2" align="right">Cost 2</th>
+                                <th colspan="2" align="right">Cost 3</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td align="right"><strong class="emphasis bold">Month</strong></td>
+                                <td align="right"><strong class="emphasis bold">Units Produced</strong></td>
+                                <td align="right"><strong class="emphasis bold">Total Costs</strong></td>
+                                <td align="right"><strong class="emphasis bold">Cost per Unit</strong></td>
+                                <td align="right"><strong class="emphasis bold">Total Costs</strong></td>
+                                <td align="right"><strong class="emphasis bold">Cost per Unit</strong></td>
+                                <td align="right"><strong class="emphasis bold">Total Costs</strong></td>
+                                <td align="right"><strong class="emphasis bold">Cost per Unit</strong></td>
+                            </tr>
+                            <tr>
+                                <td align="right">1</td>
+                                <td align="right">18,000</td>
+                                <td align="right">$36,000</td>
+                                <td align="right">_____</td>
+                                <td align="right">$19,800</td>
+                                <td align="right">_____</td>
+                                <td align="right">$5,000</td>
+                                <td align="right">_____</td>
+                            </tr>
+                            <tr>
+                                <td align="right">2</td>
+                                <td align="right">16,000</td>
+                                <td align="right">32,000</td>
+                                <td align="right">_____</td>
+                                <td align="right">19,200</td>
+                                <td align="right">_____</td>
+                                <td align="right">5,000</td>
+                                <td align="right">_____</td>
+                            </tr>
+                            <tr>
+                                <td align="right">3</td>
+                                <td align="right">14,000</td>
+                                <td align="right">28,000</td>
+                                <td align="right">_____</td>
+                                <td align="right">18,200</td>
+                                <td align="right">_____</td>
+                                <td align="right">5,000</td>
+                                <td align="right">_____</td>
+                            </tr>
+                            <tr>
+                                <td align="right">4</td>
+                                <td align="right">12,000</td>
+                                <td align="right">24,000</td>
+                                <td align="right">_____</td>
+                                <td align="right">16,800</td>
+                                <td align="right">_____</td>
+                                <td align="right">5,000</td>
+                                <td align="right">_____</td>
+                            </tr>
+                            <tr>
+                                <td align="right">5</td>
+                                <td align="right">10,000</td>
+                                <td align="right">20,000</td>
+                                <td align="right">_____</td>
+                                <td align="right">14,500</td>
+                                <td align="right">_____</td>
+                                <td align="right">5,000</td>
+                                <td align="right">_____</td>
+                            </tr>
+                            <tr>
+                                <td align="right">6</td>
+                                <td align="right">8,000</td>
+                                <td align="right">16,000</td>
+                                <td align="right">_____</td>
+                                <td align="right">12,000</td>
+                                <td align="right">_____</td>
+                                <td align="right">5,000</td>
+                                <td align="right">_____</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="para" id="heisinger_1.0-ch05_s05_p28"><em class="emphasis">Required:</em></p>
+                <ol class="orderedlist" id="heisinger_1.0-ch05_s05_l13" numeration="loweralpha">
+                    <li>Calculate the cost per unit, and then identify how the cost behaves (fixed, variable, or mixed) for each of the three costs. Explain the reasoning behind your answers.</li>
+                    <li>Why is it important to identify how costs behave with changes in activity?</li>
+                </ol>
+            </li>
+            <li>
+                <p class="para"><strong class="emphasis bold">Account Analysis.</strong> Baker Advertising Incorporated would like to estimate costs associated with its clients on an annual basis. Assume costs for supplies and advertising staff are variable costs. The accounting records indicate the following costs were incurred last year for 100 clients:</p>
+                <div class="informaltable" frame="none">
+                    <table cellpadding="0" cellspacing="0">
+                        <tbody>
+                            <tr>
+                                <td>Supplies</td>
+                                <td align="right">$  20,000</td>
+                            </tr>
+                            <tr>
+                                <td>Advertising staff wages (hourly employees)</td>
+                                <td align="right">$170,000</td>
+                            </tr>
+                            <tr>
+                                <td>Manager salary</td>
+                                <td align="right">$  90,000</td>
+                            </tr>
+                            <tr>
+                                <td>Building rent</td>
+                                <td align="right">$  56,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="para" id="heisinger_1.0-ch05_s05_p29"><em class="emphasis">Required:</em></p>
+                <ol class="orderedlist" id="heisinger_1.0-ch05_s05_l14" numeration="loweralpha">
+                    <li>Use account analysis to estimate total fixed costs per year, and the variable cost per unit. State your results in the cost equation form Y = <em class="emphasis">f</em> + <em class="emphasis">v</em>X by filling in the dollar amounts for <em class="emphasis">f</em> and <em class="emphasis">v</em>.</li>
+                    <li>Estimate the total costs for this coming year assuming 120 clients will be served.</li>
+                </ol>
+            </li>
+            <li>
+                <p class="para"><strong class="emphasis bold">High-Low Method.</strong> Castanza Company produces computer printers. Management wants to estimate the cost of production equipment used to produce printers. The company reported the following monthly cost data related to production equipment:</p>
+                <div class="informaltable" frame="all">
+                    <table cellpadding="0" cellspacing="0">
+                        <tbody>
+                            <tr>
+                                <td><strong class="emphasis bold">Reporting Period (Month)</strong></td>
+                                <td align="right"><strong class="emphasis bold">Total Costs</strong></td>
+                                <td align="right"><strong class="emphasis bold">Machine Hours</strong></td>
+                            </tr>
+                            <tr>
+                                <td>January</td>
+                                <td align="right">$   920,000</td>
+                                <td align="right">45,000</td>
+                            </tr>
+                            <tr>
+                                <td>February</td>
+                                <td align="right">600,000</td>
+                                <td align="right">25,000</td>
+                            </tr>
+                            <tr>
+                                <td>March</td>
+                                <td align="right">500,000</td>
+                                <td align="right">20,000</td>
+                            </tr>
+                            <tr>
+                                <td>April</td>
+                                <td align="right">1,100,000</td>
+                                <td align="right">90,000</td>
+                            </tr>
+                            <tr>
+                                <td>May</td>
+                                <td align="right">1,140,000</td>
+                                <td align="right">95,000</td>
+                            </tr>
+                            <tr>
+                                <td>June</td>
+                                <td align="right">620,000</td>
+                                <td align="right">30,000</td>
+                            </tr>
+                            <tr>
+                                <td>July</td>
+                                <td align="right">880,000</td>
+                                <td align="right">38,000</td>
+                            </tr>
+                            <tr>
+                                <td>August</td>
+                                <td align="right">910,000</td>
+                                <td align="right">48,000</td>
+                            </tr>
+                            <tr>
+                                <td>September</td>
+                                <td align="right">1,060,000</td>
+                                <td align="right">78,000</td>
+                            </tr>
+                            <tr>
+                                <td>October</td>
+                                <td align="right">960,000</td>
+                                <td align="right">51,000</td>
+                            </tr>
+                            <tr>
+                                <td>November</td>
+                                <td align="right">1,400,000</td>
+                                <td align="right">96,000</td>
+                            </tr>
+                            <tr>
+                                <td>December</td>
+                                <td align="right">980,000</td>
+                                <td align="right">54,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="para" id="heisinger_1.0-ch05_s05_p30"><em class="emphasis">Required:</em></p>
+                <ol class="orderedlist" id="heisinger_1.0-ch05_s05_l15" numeration="loweralpha">
+                    <li>Use the four steps of the high-low method to estimate total fixed costs per month and the variable cost per machine hour. State your results in the cost equation form Y = <em class="emphasis">f</em> + <em class="emphasis">v</em>X by filling in the dollar amounts for <em class="emphasis">f</em> and <em class="emphasis">v</em>.</li>
+                    <li>What would Castanza Company’s estimated costs be if it used 50,000 machine hours next month?</li>
+                    <li>What would Castanza Company’s estimated costs be if it used 15,000 machine hours next month? Why should you feel uncomfortable estimating costs for 15,000 machine hours?</li>
+                </ol>
+            </li>
+            <li>
+                <p class="para"><strong class="emphasis bold">Scattergraph Method.</strong> Castanza Company produces computer printers. Management wants to estimate the cost of production equipment used to produce printers. The company reported the following monthly cost data related to production equipment (this is the same data as the previous exercise):</p>
+                <div class="informaltable" frame="all">
+                    <table cellpadding="0" cellspacing="0">
+                        <tbody>
+                            <tr>
+                                <td><strong class="emphasis bold">Reporting Period (Month)</strong></td>
+                                <td align="right"><strong class="emphasis bold">Costs</strong></td>
+                                <td align="right"><strong class="emphasis bold">Machine Hours</strong></td>
+                            </tr>
+                            <tr>
+                                <td>January</td>
+                                <td align="right">$  920,000</td>
+                                <td align="right">45,000</td>
+                            </tr>
+                            <tr>
+                                <td>February</td>
+                                <td align="right">600,000</td>
+                                <td align="right">25,000</td>
+                            </tr>
+                            <tr>
+                                <td>March</td>
+                                <td align="right">500,000</td>
+                                <td align="right">20,000</td>
+                            </tr>
+                            <tr>
+                                <td>April</td>
+                                <td align="right">1,100,000</td>
+                                <td align="right">90,000</td>
+                            </tr>
+                            <tr>
+                                <td>May</td>
+                                <td align="right">1,140,000</td>
+                                <td align="right">95,000</td>
+                            </tr>
+                            <tr>
+                                <td>June</td>
+                                <td align="right">620,000</td>
+                                <td align="right">30,000</td>
+                            </tr>
+                            <tr>
+                                <td>July</td>
+                                <td align="right">880,000</td>
+                                <td align="right">38,000</td>
+                            </tr>
+                            <tr>
+                                <td>August</td>
+                                <td align="right">910,000</td>
+                                <td align="right">48,000</td>
+                            </tr>
+                            <tr>
+                                <td>September</td>
+                                <td align="right">1,060,000</td>
+                                <td align="right">78,000</td>
+                            </tr>
+                            <tr>
+                                <td>October</td>
+                                <td align="right">960,000</td>
+                                <td align="right">51,000</td>
+                            </tr>
+                            <tr>
+                                <td>November</td>
+                                <td align="right">1,400,000</td>
+                                <td align="right">96,000</td>
+                            </tr>
+                            <tr>
+                                <td>December</td>
+                                <td align="right">980,000</td>
+                                <td align="right">54,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="para" id="heisinger_1.0-ch05_s05_p31"><em class="emphasis">Required:</em></p>
+                <ol class="orderedlist" id="heisinger_1.0-ch05_s05_l16" numeration="loweralpha">
+                    <li>Use the five steps of the scattergraph method to estimate total fixed costs per month and the variable cost per machine hour. State your results in the cost equation form Y = <em class="emphasis">f</em> + <em class="emphasis">v</em>X by filling in the dollar amounts for <em class="emphasis">f</em> and <em class="emphasis">v</em>.</li>
+                    <li>What would Castanza Company’s estimated costs be if it used 50,000 machine hours next month?</li>
+                    <li>What would Castanza Company’s estimated costs be if it used 15,000 machine hours next month?</li>
+                </ol>
+            </li>
+            <li>
+                <p class="para"><strong class="emphasis bold">Regression Analysis.</strong> Regression analysis was run for Castanza Company resulting in the following output (this is based on the same data as the previous two exercises):</p>
+                <div class="informaltable" frame="none">
+                    <table cellpadding="0" cellspacing="0">
+                        <tbody>
+                            <tr>
+                                <td align="right"></td>
+                                <td align="right">Coefficients</td>
+                            </tr>
+                            <tr>
+                                <td align="right">
+<em class="emphasis">y</em>-intercept</td>
+                                <td align="right">445,639</td>
+                            </tr>
+                            <tr>
+                                <td align="right">
+<em class="emphasis">x</em> variable</td>
+                                <td align="right">8.54</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="para" id="heisinger_1.0-ch05_s05_p32"><em class="emphasis">Required:</em></p>
+                <ol class="orderedlist" id="heisinger_1.0-ch05_s05_l17" numeration="loweralpha">
+                    <li>Use the regression output given to develop the cost equation Y = <em class="emphasis">f</em> + <em class="emphasis">v</em>X by filling in the dollar amounts for <em class="emphasis">f</em> and <em class="emphasis">v</em>.</li>
+                    <li>What would Castanza Company’s estimated costs be if it used 50,000 machine hours next month?</li>
+                    <li>What would Castanza Company’s estimated costs be if it used 15,000 machine hours next month?</li>
+                </ol>
+            </li>
+            <li>
+                <p class="para"><strong class="emphasis bold">Contribution Margin Income Statement.</strong> Last month Kumar Production Company sold its product for $60 per unit. Fixed production costs were $40,000, and variable production costs amounted to $15 per unit. Fixed selling and administrative costs totaled $26,000, and variable selling and administrative costs amounted to $5 per unit. Kumar Production produced and sold 7,000 units last month.</p>
+                <p class="para" id="heisinger_1.0-ch05_s05_p33"><em class="emphasis">Required:</em></p>
+                <ol class="orderedlist" id="heisinger_1.0-ch05_s05_l18" numeration="loweralpha">
+                    <li>Prepare a traditional income statement for Kumar Production Company.</li>
+                    <li>Prepare a contribution margin income statement for Kumar Production Company.</li>
+                    <li>Why do companies use the contribution margin income statement format?</li>
+                </ol>
+            </li>
+            <li>
+                <p class="para"><strong class="emphasis bold">Regression Analysis Using Excel (Appendix).</strong> Walleye Company produces fishing reels. Management wants to estimate the cost of production equipment used to produce the reels. The company reported the following monthly cost data related to production equipment:</p>
+                <div class="informaltable" frame="all">
+                    <table cellpadding="0" cellspacing="0">
+                        <tbody>
+                            <tr>
+                                <td><strong class="emphasis bold">Reporting Period (Month)</strong></td>
+                                <td align="right"><strong class="emphasis bold">Total Costs</strong></td>
+                                <td align="right"><strong class="emphasis bold">Machine Hours</strong></td>
+                            </tr>
+                            <tr>
+                                <td>January</td>
+                                <td align="right">$1,104,000</td>
+                                <td align="right">54,000</td>
+                            </tr>
+                            <tr>
+                                <td>February</td>
+                                <td align="right">720,000</td>
+                                <td align="right">30,000</td>
+                            </tr>
+                            <tr>
+                                <td>March</td>
+                                <td align="right">600,000</td>
+                                <td align="right">24,000</td>
+                            </tr>
+                            <tr>
+                                <td>April</td>
+                                <td align="right">1,320,000</td>
+                                <td align="right">108,000</td>
+                            </tr>
+                            <tr>
+                                <td>May</td>
+                                <td align="right">1,368,000</td>
+                                <td align="right">114,000</td>
+                            </tr>
+                            <tr>
+                                <td>June</td>
+                                <td align="right">744,000</td>
+                                <td align="right">36,000</td>
+                            </tr>
+                            <tr>
+                                <td>July</td>
+                                <td align="right">1,056,000</td>
+                                <td align="right">45,600</td>
+                            </tr>
+                            <tr>
+                                <td>August</td>
+                                <td align="right">1,092,000</td>
+                                <td align="right">57,600</td>
+                            </tr>
+                            <tr>
+                                <td>September</td>
+                                <td align="right">1,272,000</td>
+                                <td align="right">93,600</td>
+                            </tr>
+                            <tr>
+                                <td>October</td>
+                                <td align="right">1,152,000</td>
+                                <td align="right">61,200</td>
+                            </tr>
+                            <tr>
+                                <td>November</td>
+                                <td align="right">1,680,000</td>
+                                <td align="right">115,200</td>
+                            </tr>
+                            <tr>
+                                <td>December</td>
+                                <td align="right">1,176,000</td>
+                                <td align="right">64,800</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="para" id="heisinger_1.0-ch05_s05_p34"><em class="emphasis">Required:</em></p>
+                <ol class="orderedlist" id="heisinger_1.0-ch05_s05_l19" numeration="loweralpha">
+                    <li>Use Excel to perform regression analysis. Provide a printout of the results.</li>
+                    <li>Use the regression output to develop the cost equation Y = <em class="emphasis">f</em> + <em class="emphasis">v</em>X by filling in the dollar amounts for <em class="emphasis">f</em> and <em class="emphasis">v</em>.</li>
+                    <li>What would Walleye Company’s estimated costs be if it used 90,000 machine hours this month?</li>
+                </ol>
+            </li>
+        </ol>
+        <p class="simpara">Exercises: Set B</p>
+        <ol class="orderedlist" id="heisinger_1.0-ch05_s05_l06" start="34">
+            <li>
+                <p class="para"><strong class="emphasis bold">Identifying Cost Behavior.</strong> Ivanov, Inc., is trying to identify the cost behavior of the three costs shown. Cost information is provided for six months.</p>
+                <div class="informaltable" frame="all">
+                    <table cellpadding="0" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th align="right"></th>
+                                <th align="right"></th>
+                                <th colspan="2" align="right">Cost 1</th>
+                                <th colspan="2" align="right">Cost 2</th>
+                                <th colspan="2" align="right">Cost 3</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td align="right"><strong class="emphasis bold">Month</strong></td>
+                                <td align="right"><strong class="emphasis bold">Units Produced</strong></td>
+                                <td align="right"><strong class="emphasis bold">Total Costs</strong></td>
+                                <td align="right"><strong class="emphasis bold">Cost per Unit</strong></td>
+                                <td align="right"><strong class="emphasis bold">Total Costs</strong></td>
+                                <td align="right"><strong class="emphasis bold">Cost per Unit</strong></td>
+                                <td align="right"><strong class="emphasis bold">Total Costs</strong></td>
+                                <td align="right"><strong class="emphasis bold">Cost per Unit</strong></td>
+                            </tr>
+                            <tr>
+                                <td align="right">1</td>
+                                <td align="right">8,000</td>
+                                <td align="right">$10,000</td>
+                                <td align="right">_____</td>
+                                <td align="right">$24,000</td>
+                                <td align="right">_____</td>
+                                <td align="right">$32,000</td>
+                                <td align="right">_____</td>
+                            </tr>
+                            <tr>
+                                <td align="right">2</td>
+                                <td align="right">10,000</td>
+                                <td align="right">10,000</td>
+                                <td align="right">_____</td>
+                                <td align="right">29,000</td>
+                                <td align="right">_____</td>
+                                <td align="right">40,000</td>
+                                <td align="right">_____</td>
+                            </tr>
+                            <tr>
+                                <td align="right">3</td>
+                                <td align="right">12,000</td>
+                                <td align="right">10,000</td>
+                                <td align="right">_____</td>
+                                <td align="right">33,600</td>
+                                <td align="right">_____</td>
+                                <td align="right">48,000</td>
+                                <td align="right">_____</td>
+                            </tr>
+                            <tr>
+                                <td align="right">4</td>
+                                <td align="right">14,000</td>
+                                <td align="right">10,000</td>
+                                <td align="right">_____</td>
+                                <td align="right">36,400</td>
+                                <td align="right">_____</td>
+                                <td align="right">56,000</td>
+                                <td align="right">_____</td>
+                            </tr>
+                            <tr>
+                                <td align="right">5</td>
+                                <td align="right">16,000</td>
+                                <td align="right">10,000</td>
+                                <td align="right">_____</td>
+                                <td align="right">38,400</td>
+                                <td align="right">_____</td>
+                                <td align="right">64,000</td>
+                                <td align="right">_____</td>
+                            </tr>
+                            <tr>
+                                <td align="right">6</td>
+                                <td align="right">18,000</td>
+                                <td align="right">10,000</td>
+                                <td align="right">_____</td>
+                                <td align="right">39,600</td>
+                                <td align="right">_____</td>
+                                <td align="right">72,000</td>
+                                <td align="right">_____</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="para" id="heisinger_1.0-ch05_s05_p35"><em class="emphasis">Required:</em></p>
+                <ol class="orderedlist" id="heisinger_1.0-ch05_s05_l20" numeration="loweralpha">
+                    <li>Calculate the cost per unit, and then identify how the cost behaves (fixed, variable, or mixed) for each of the three costs. Explain the reasoning behind your answers.</li>
+                    <li>Why is it important to identify how costs behave with changes in activity?</li>
+                </ol>
+            </li>
+            <li>
+                <p class="para"><strong class="emphasis bold">Account Analysis.</strong> Swim-Safe Company hires several instructors who provide weekly one-hour private swim lessons to individuals. The company would like to estimate costs associated with its swim lessons on a weekly basis. Assume costs for towels, snacks, drinks, and instructor wages are variable costs. The accounting records indicate the following costs were incurred last week for 250 customer lessons:</p>
+                <div class="informaltable" frame="none">
+                    <table cellpadding="0" cellspacing="0">
+                        <tbody>
+                            <tr>
+                                <td>Towels, snacks, drinks</td>
+                                <td>$1,250</td>
+                            </tr>
+                            <tr>
+                                <td>Instructor wages (hourly employees)</td>
+                                <td>$3,000</td>
+                            </tr>
+                            <tr>
+                                <td>Manager (owner) salary</td>
+                                <td>$1,500</td>
+                            </tr>
+                            <tr>
+                                <td>Pool rental</td>
+                                <td>$2,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="para" id="heisinger_1.0-ch05_s05_p36"><em class="emphasis">Required:</em></p>
+                <ol class="orderedlist" id="heisinger_1.0-ch05_s05_l21" numeration="loweralpha">
+                    <li>Use account analysis to estimate total fixed costs per week, and the variable cost per lesson. State your results in the cost equation form Y = <em class="emphasis">f</em> + <em class="emphasis">v</em>X by filling in the dollar amounts for <em class="emphasis">f</em> and <em class="emphasis">v</em>.</li>
+                    <li>Estimate the total costs for this coming week assuming 220 lessons will be provided.</li>
+                </ol>
+            </li>
+            <li>
+                <p class="para"><strong class="emphasis bold">High-Low Method Quality Tools.</strong> Quality Tools Incorporated would like to estimate costs associated with its sales personnel. Salespeople are paid a salary plus commission. Commission rates vary among products and are based on sales dollars. The company reported the following monthly cost data related to sales personnel:</p>
+                <div class="informaltable" frame="all">
+                    <table cellpadding="0" cellspacing="0">
+                        <tbody>
+                            <tr>
+                                <td><strong class="emphasis bold">Reporting Period (Month)</strong></td>
+                                <td align="right"><strong class="emphasis bold">Total Costs</strong></td>
+                                <td align="right"><strong class="emphasis bold">Sales Amount</strong></td>
+                            </tr>
+                            <tr>
+                                <td>January</td>
+                                <td align="right">$710,000</td>
+                                <td align="right">$13,800,000</td>
+                            </tr>
+                            <tr>
+                                <td>February</td>
+                                <td align="right">695,000</td>
+                                <td align="right">13,600,000</td>
+                            </tr>
+                            <tr>
+                                <td>March</td>
+                                <td align="right">765,000</td>
+                                <td align="right">15,100,000</td>
+                            </tr>
+                            <tr>
+                                <td>April</td>
+                                <td align="right">650,000</td>
+                                <td align="right">12,000,000</td>
+                            </tr>
+                            <tr>
+                                <td>May</td>
+                                <td align="right">775,000</td>
+                                <td align="right">15,500,000</td>
+                            </tr>
+                            <tr>
+                                <td>June</td>
+                                <td align="right">750,000</td>
+                                <td align="right">14,700,000</td>
+                            </tr>
+                            <tr>
+                                <td>July</td>
+                                <td align="right">715,000</td>
+                                <td align="right">14,500,000</td>
+                            </tr>
+                            <tr>
+                                <td>August</td>
+                                <td align="right">680,000</td>
+                                <td align="right">13,100,000</td>
+                            </tr>
+                            <tr>
+                                <td>September</td>
+                                <td align="right">830,000</td>
+                                <td align="right">16,500,000</td>
+                            </tr>
+                            <tr>
+                                <td>October</td>
+                                <td align="right">815,000</td>
+                                <td align="right">16,000,000</td>
+                            </tr>
+                            <tr>
+                                <td>November</td>
+                                <td align="right">800,000</td>
+                                <td align="right">15,600,000</td>
+                            </tr>
+                            <tr>
+                                <td>December</td>
+                                <td align="right">690,000</td>
+                                <td align="right">13,200,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="para" id="heisinger_1.0-ch05_s05_p37"><em class="emphasis">Required:</em></p>
+                <ol class="orderedlist" id="heisinger_1.0-ch05_s05_l22" numeration="loweralpha">
+                    <li>Use the four steps of the high-low method to estimate total fixed costs per month and the variable cost per sales dollar. State your results in the cost equation form Y = <em class="emphasis">f</em> + <em class="emphasis">v</em>X by filling in the dollar amounts for <em class="emphasis">f</em> and <em class="emphasis">v</em>.</li>
+                    <li>What would Quality Tools’ estimated costs be if it had sales of $12,500,000 next month?</li>
+                    <li>What would Quality Tools’ estimated costs be if it had sales of $20,000,000 next month? Why should you feel uncomfortable estimating costs for $20,000,000 in sales?</li>
+                </ol>
+            </li>
+            <li>
+                <p class="para"><strong class="emphasis bold">Scattergraph Method.</strong> Quality Tools Incorporated would like to estimate costs associated with its sales personnel. Salespeople are paid a salary plus commission. Commission rates vary among products and are based on sales dollars. The company reported the following monthly cost data related to sales personnel (this is the same data as the previous exercise):</p>
+                <div class="informaltable" frame="all">
+                    <table cellpadding="0" cellspacing="0">
+                        <tbody>
+                            <tr>
+                                <td><strong class="emphasis bold">Reporting Period (Month)</strong></td>
+                                <td align="right"><strong class="emphasis bold">Total Costs</strong></td>
+                                <td align="right"><strong class="emphasis bold">Sales Amount</strong></td>
+                            </tr>
+                            <tr>
+                                <td>January</td>
+                                <td align="right">$710,000</td>
+                                <td align="right">$13,800,000</td>
+                            </tr>
+                            <tr>
+                                <td>February</td>
+                                <td align="right">695,000</td>
+                                <td align="right">13,600,000</td>
+                            </tr>
+                            <tr>
+                                <td>March</td>
+                                <td align="right">765,000</td>
+                                <td align="right">15,100,000</td>
+                            </tr>
+                            <tr>
+                                <td>April</td>
+                                <td align="right">650,000</td>
+                                <td align="right">12,000,000</td>
+                            </tr>
+                            <tr>
+                                <td>May</td>
+                                <td align="right">775,000</td>
+                                <td align="right">15,500,000</td>
+                            </tr>
+                            <tr>
+                                <td>June</td>
+                                <td align="right">750,000</td>
+                                <td align="right">14,700,000</td>
+                            </tr>
+                            <tr>
+                                <td>July</td>
+                                <td align="right">715,000</td>
+                                <td align="right">14,500,000</td>
+                            </tr>
+                            <tr>
+                                <td>August</td>
+                                <td align="right">680,000</td>
+                                <td align="right">13,100,000</td>
+                            </tr>
+                            <tr>
+                                <td>September</td>
+                                <td align="right">830,000</td>
+                                <td align="right">16,500,000</td>
+                            </tr>
+                            <tr>
+                                <td>October</td>
+                                <td align="right">815,000</td>
+                                <td align="right">16,000,000</td>
+                            </tr>
+                            <tr>
+                                <td>November</td>
+                                <td align="right">800,000</td>
+                                <td align="right">15,600,000</td>
+                            </tr>
+                            <tr>
+                                <td>December</td>
+                                <td align="right">690,000</td>
+                                <td align="right">13,200,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="para" id="heisinger_1.0-ch05_s05_p38"><em class="emphasis">Required:</em></p>
+                <ol class="orderedlist" id="heisinger_1.0-ch05_s05_l23" numeration="loweralpha">
+                    <li>Use the five steps of the scattergraph method to estimate total fixed costs per month and the variable cost per sales dollar. State your results in the cost equation form Y = <em class="emphasis">f</em> + <em class="emphasis">v</em>X by filling in the dollar amounts for <em class="emphasis">f</em> and <em class="emphasis">v</em>.</li>
+                    <li>What would Quality Tools’ estimated costs be if it had sales of $12,500,000 next month?</li>
+                    <li>What would Quality Tools’ estimated costs be if it had sales of $20,000,000 next month?</li>
+                </ol>
+            </li>
+            <li>
+                <p class="para"><strong class="emphasis bold">Regression Analysis.</strong> Regression analysis was run for Quality Tools Incorporated resulting in the following output (this is based on the same data as the previous two exercises):</p>
+                <div class="informaltable" frame="none">
+                    <table cellpadding="0" cellspacing="0">
+                        <tbody>
+                            <tr>
+                                <td align="right"></td>
+                                <td align="right">Coefficients</td>
+                            </tr>
+                            <tr>
+                                <td align="right">
+<em class="emphasis">y-</em>intercept</td>
+                                <td align="right">129,188</td>
+                            </tr>
+                            <tr>
+                                <td align="right">
+<em class="emphasis">x</em> variable</td>
+                                <td align="right">0.04</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="para" id="heisinger_1.0-ch05_s05_p99"><em class="emphasis">Required:</em></p>
+                <ol class="orderedlist" id="heisinger_1.0-ch05_s05_l24" numeration="loweralpha">
+                    <li>Use the regression output given to develop the cost equation Y = <em class="emphasis">f</em> + <em class="emphasis">v</em>X by filling in the dollar amounts for <em class="emphasis">f</em> and <em class="emphasis">v</em>.</li>
+                    <li>What would Quality Tools’ estimated costs be if it had sales of $12,500,000 next month?</li>
+                    <li>What would Quality Tools’ estimated costs be if it had sales of $20,000,000 next month?</li>
+                </ol>
+            </li>
+            <li>
+                <p class="para"><strong class="emphasis bold">Contribution Margin Income Statement, Service Company.</strong> Last month Seafood Grill had total sales of $200,000. Food preparation and service costs totaled $90,000 (20 percent fixed, 80 percent variable). Selling and administrative costs totaled $30,000 (70 percent fixed, 30 percent variable).</p>
+                <p class="para" id="heisinger_1.0-ch05_s05_p39"><em class="emphasis">Required:</em></p>
+                <ol class="orderedlist" id="heisinger_1.0-ch05_s05_l25" numeration="loweralpha">
+                    <li>Prepare a traditional income statement for Seafood Grill.</li>
+                    <li>Prepare a contribution margin income statement for Seafood Grill.</li>
+                    <li>Why do companies use the contribution margin income statement format?</li>
+                </ol>
+            </li>
+            <li>
+                <p class="para"><strong class="emphasis bold">Regression Analysis Using Excel (Appendix).</strong> Cain Company produces calculators. Management wants to estimate the cost of production equipment used to produce the calculators. The company reported the following monthly cost data related to production equipment:</p>
+                <div class="informaltable" frame="all">
+                    <table cellpadding="0" cellspacing="0">
+                        <tbody>
+                            <tr>
+                                <td><strong class="emphasis bold">Reporting Period (Month)</strong></td>
+                                <td align="right"><strong class="emphasis bold">Total Costs</strong></td>
+                                <td align="right"><strong class="emphasis bold">Machine Hours</strong></td>
+                            </tr>
+                            <tr>
+                                <td>January</td>
+                                <td align="right">$1,250,000</td>
+                                <td align="right">59,000</td>
+                            </tr>
+                            <tr>
+                                <td>February</td>
+                                <td align="right">990,000</td>
+                                <td align="right">33,000</td>
+                            </tr>
+                            <tr>
+                                <td>March</td>
+                                <td align="right">850,000</td>
+                                <td align="right">28,000</td>
+                            </tr>
+                            <tr>
+                                <td>April</td>
+                                <td align="right">1,580,000</td>
+                                <td align="right">120,000</td>
+                            </tr>
+                            <tr>
+                                <td>May</td>
+                                <td align="right">1,670,000</td>
+                                <td align="right">126,000</td>
+                            </tr>
+                            <tr>
+                                <td>June</td>
+                                <td align="right">1,050,000</td>
+                                <td align="right">40,000</td>
+                            </tr>
+                            <tr>
+                                <td>July</td>
+                                <td align="right">1,360,000</td>
+                                <td align="right">51,000</td>
+                            </tr>
+                            <tr>
+                                <td>August</td>
+                                <td align="right">1,400,000</td>
+                                <td align="right">70,000</td>
+                            </tr>
+                            <tr>
+                                <td>September</td>
+                                <td align="right">1,550,000</td>
+                                <td align="right">105,000</td>
+                            </tr>
+                            <tr>
+                                <td>October</td>
+                                <td align="right">1,500,000</td>
+                                <td align="right">67,000</td>
+                            </tr>
+                            <tr>
+                                <td>November</td>
+                                <td align="right">1,860,000</td>
+                                <td align="right">128,000</td>
+                            </tr>
+                            <tr>
+                                <td>December</td>
+                                <td align="right">1,480,000</td>
+                                <td align="right">71,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="para" id="heisinger_1.0-ch05_s05_p40"><em class="emphasis">Required:</em></p>
+                <ol class="orderedlist" id="heisinger_1.0-ch05_s05_l26" numeration="loweralpha">
+                    <li>Use Excel to perform regression analysis. Provide a printout of the results.</li>
+                    <li>Use the regression output to develop the cost equation Y = <em class="emphasis">f</em> + <em class="emphasis">v</em>X by filling in the dollar amounts for <em class="emphasis">f</em> and <em class="emphasis">v</em>.</li>
+                    <li>What would Cain Company’s estimated costs be if it used 110,000 machine hours this month?</li>
+                </ol>
+            </li>
+        </ol>
+        <p class="simpara">Problems</p>
+        <ol class="orderedlist" id="heisinger_1.0-ch05_s05_l27" start="41">
+            <li>
+                <p class="para"><strong class="emphasis bold">Cost Behavior.</strong> Assume you are a consultant performing work for two different companies. Each company has asked you to help them identify the behavior of certain costs.</p>
+                <p class="para" id="heisinger_1.0-ch05_s05_p41"><em class="emphasis">Required:</em></p>
+                <ol class="orderedlist" id="heisinger_1.0-ch05_s05_l28" numeration="loweralpha">
+                    <li>
+                    <p class="para">Identify each of the following costs for Hwang Company, a producer of ski boats, as variable (V), fixed (F), or mixed (M):</p>
+                    <ol class="orderedlist" id="heisinger_1.0-ch05_s05_l29" numeration="arabic">
+                        <li>_____Salary of production manager</li>
+                        <li>_____Materials required for production</li>
+                        <li>_____Monthly rent on factory building</li>
+                        <li>_____Hourly wages for assembly workers</li>
+                        <li>_____Straight-line depreciation for factory equipment</li>
+                        <li>_____Annual insurance on factory building</li>
+                        <li>_____Invoices sent to customers</li>
+                        <li>_____Salaries and commissions of salespeople</li>
+                        <li>_____Salary of chief executive officer</li>
+                        <li>_____Company cell phones with first 50 hours free, then 10 cents per minute</li>
+                    </ol>
+                    </li>
+                    <li>
+                    <p class="para">Identify each of the following costs for Rainier Camping Products, a maker of backpacks, as variable (V), fixed (F), or mixed (M):</p>
+                    <ol class="orderedlist" id="heisinger_1.0-ch05_s05_l30" numeration="arabic">
+                        <li>_____Hourly wages for assembly workers</li>
+                        <li>_____Fabric required for production</li>
+                        <li>_____Straight-line depreciation on factory building</li>
+                        <li>_____Salaries and commissions of salespeople</li>
+                        <li>_____Lease payments for factory equipment</li>
+                        <li>_____Company cell phones with first 80 hours free, then 8 cents per minute</li>
+                        <li>_____Invoices sent to customers</li>
+                        <li>_____Salary of production manager</li>
+                        <li>_____Salary of controller (accounting)</li>
+                        <li>_____Electricity for factory building</li>
+                    </ol>
+                    </li>
+                    <li>How might the managers of these companies use the cost behavior information requested?</li>
+                </ol>
+            </li>
+            <li>
+                <p class="para"><strong class="emphasis bold">Account Analysis and Contribution Margin Income Statement.</strong> Madden Company would like to estimate costs associated with its production of football helmets on a monthly basis. The accounting records indicate the following production costs were incurred last month for 4,000 helmets.</p>
+                <div class="informaltable" frame="all">
+                    <table cellpadding="0" cellspacing="0">
+                        <tbody>
+                            <tr>
+                                <td>Assembly workers’ labor (hourly)</td>
+                                <td align="right">$70,000</td>
+                            </tr>
+                            <tr>
+                                <td>Factory rent</td>
+                                <td align="right">3,000</td>
+                            </tr>
+                            <tr>
+                                <td>Plant manager’s salary</td>
+                                <td align="right">5,000</td>
+                            </tr>
+                            <tr>
+                                <td>Supplies</td>
+                                <td align="right">20,000</td>
+                            </tr>
+                            <tr>
+                                <td>Factory insurance</td>
+                                <td align="right">12,000</td>
+                            </tr>
+                            <tr>
+                                <td>Materials required for production</td>
+                                <td align="right">20,000</td>
+                            </tr>
+                            <tr>
+                                <td>Maintenance of production equipment (based on usage)</td>
+                                <td align="right">18,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="para" id="heisinger_1.0-ch05_s05_p42"><em class="emphasis">Required:</em></p>
+                <ol class="orderedlist" id="heisinger_1.0-ch05_s05_l31" numeration="loweralpha">
+                    <li>Use account analysis to estimate total fixed costs per month and the variable cost per unit. State your results in the cost equation form Y = <em class="emphasis">f</em> + <em class="emphasis">v</em>X by filling in the dollar amounts for <em class="emphasis">f</em> and <em class="emphasis">v</em>.</li>
+                    <li>Estimate total production costs assuming 5,000 helmets will be produced and sold.</li>
+                    <li>Prepare a contribution margin income statement assuming 5,000 helmets will be produced, and each helmet will be sold for $70. Fixed selling and administrative costs total $10,000. Variable selling and administrative costs are $8 per unit.</li>
+                </ol>
+            </li>
+            <li>
+                <p class="para"><strong class="emphasis bold">High-Low, Scattergraph, and Regression Analysis; Manufacturing Company.</strong> Woodworks, Inc., produces cabinet doors. Manufacturing overhead costs tend to fluctuate from one month to the next, and management would like to accurately estimate these costs for planning and decision-making purposes.</p>
+                <p class="para" id="heisinger_1.0-ch05_s05_p43">The accounting staff at Woodworks recommends that costs be broken down into fixed and variable components. Because the production process is highly automated, most of the manufacturing overhead costs are related to machinery and equipment. The accounting staff believes the best starting point is to review historical data for costs and machine hours:</p>
+                <div class="informaltable" frame="all">
+                    <table cellpadding="0" cellspacing="0">
+                        <tbody>
+                            <tr>
+                                <td><strong class="emphasis bold">Reporting Period (Month)</strong></td>
+                                <td align="right"><strong class="emphasis bold">Total Costs</strong></td>
+                                <td align="right"><strong class="emphasis bold">Machine Hours</strong></td>
+                            </tr>
+                            <tr>
+                                <td>January</td>
+                                <td align="right">$278,000</td>
+                                <td align="right">1,550</td>
+                            </tr>
+                            <tr>
+                                <td>February</td>
+                                <td align="right">280,000</td>
+                                <td align="right">1,570</td>
+                            </tr>
+                            <tr>
+                                <td>March</td>
+                                <td align="right">266,000</td>
+                                <td align="right">1,115</td>
+                            </tr>
+                            <tr>
+                                <td>April</td>
+                                <td align="right">290,000</td>
+                                <td align="right">1,700</td>
+                            </tr>
+                            <tr>
+                                <td>May</td>
+                                <td align="right">262,000</td>
+                                <td align="right">1,110</td>
+                            </tr>
+                            <tr>
+                                <td>June</td>
+                                <td align="right">269,000</td>
+                                <td align="right">1,225</td>
+                            </tr>
+                            <tr>
+                                <td>July</td>
+                                <td align="right">275,000</td>
+                                <td align="right">1,335</td>
+                            </tr>
+                            <tr>
+                                <td>August</td>
+                                <td align="right">286,000</td>
+                                <td align="right">1,660</td>
+                            </tr>
+                            <tr>
+                                <td>September</td>
+                                <td align="right">250,000</td>
+                                <td align="right">1,000</td>
+                            </tr>
+                            <tr>
+                                <td>October</td>
+                                <td align="right">253,000</td>
+                                <td align="right">1,020</td>
+                            </tr>
+                            <tr>
+                                <td>November</td>
+                                <td align="right">260,000</td>
+                                <td align="right">1,025</td>
+                            </tr>
+                            <tr>
+                                <td>December</td>
+                                <td align="right">281,000</td>
+                                <td align="right">1,600</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="para" id="heisinger_1.0-ch05_s05_p44">These data were entered into a computer regression program, which produced the following output:</p>
+                <div class="informaltable" frame="none">
+                    <table cellpadding="0" cellspacing="0">
+                        <tbody>
+                            <tr>
+                                <td align="right"></td>
+                                <td align="right">Coefficients</td>
+                            </tr>
+                            <tr>
+                                <td align="right">
+<em class="emphasis">y</em>-intercept</td>
+                                <td align="right">210,766</td>
+                            </tr>
+                            <tr>
+                                <td align="right">
+<em class="emphasis">x</em> variable</td>
+                                <td align="right">45.31</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="para" id="heisinger_1.0-ch05_s05_p45"><em class="emphasis">Required:</em></p>
+                <ol class="orderedlist" id="heisinger_1.0-ch05_s05_l32" numeration="loweralpha">
+                    <li>Use the four steps of the high-low method to estimate total fixed costs per month and the variable cost per machine hour. State your results in the cost equation form Y = <em class="emphasis">f</em> + <em class="emphasis">v</em>X by filling in the dollar amounts for <em class="emphasis">f</em> and <em class="emphasis">v</em>.</li>
+                    <li>Use the five steps of the scattergraph method to estimate total fixed costs per month, and the variable cost per machine hour. State your results in the cost equation form Y = <em class="emphasis">f</em> + <em class="emphasis">v</em>X by filling in the dollar amounts for <em class="emphasis">f</em> and <em class="emphasis">v</em>.</li>
+                    <li>Use the regression output given to develop the cost equation Y = <em class="emphasis">f</em> + <em class="emphasis">v</em>X by filling in the dollar amounts for <em class="emphasis">f</em> and <em class="emphasis">v</em>.</li>
+                    <li>Use the results of the high-low method (a), scattergraph method (b), and regression analysis (c), to estimate costs for 1,500 machine hours. (You will have three different answers—one for each method.) Which approach do you think is most accurate and why?</li>
+                    <li>Management likes the regression analysis approach and asks you to estimate costs for 5,000 machine hours using this approach (the company plans to expand by opening another facility and hiring additional employees). Calculate your estimate, and explain why your estimate might be misleading.</li>
+                </ol>
+            </li>
+            <li>
+                <p class="para"><strong class="emphasis bold">High-Low, Scattergraph, and Regression Analysis; Service Company.</strong> Sanchez Accounting Company prepares tax returns for individuals. Marie Sanchez, the owner, would like an accurate estimate of the company’s costs for planning and decision-making purposes. When Marie asks you to devise a way to estimate costs on a monthly basis, you recall the importance of breaking costs into fixed and variable components. Because the company’s costs are driven primarily by the number of tax returns prepared, you decide to use historical data for costs and tax returns prepared:</p>
+                <div class="informaltable" frame="all">
+                    <table cellpadding="0" cellspacing="0">
+                        <tbody>
+                            <tr>
+                                <td><strong class="emphasis bold">Reporting Period (Month)</strong></td>
+                                <td align="right"><strong class="emphasis bold">Total Costs</strong></td>
+                                <td align="right"><strong class="emphasis bold">Returns Prepared</strong></td>
+                            </tr>
+                            <tr>
+                                <td>January</td>
+                                <td align="right">$157,000</td>
+                                <td align="right">315</td>
+                            </tr>
+                            <tr>
+                                <td>February</td>
+                                <td align="right">145,000</td>
+                                <td align="right">300</td>
+                            </tr>
+                            <tr>
+                                <td>March</td>
+                                <td align="right">167,500</td>
+                                <td align="right">375</td>
+                            </tr>
+                            <tr>
+                                <td>April</td>
+                                <td align="right">163,000</td>
+                                <td align="right">325</td>
+                            </tr>
+                            <tr>
+                                <td>May</td>
+                                <td align="right">120,000</td>
+                                <td align="right">250</td>
+                            </tr>
+                            <tr>
+                                <td>June</td>
+                                <td align="right">112,000</td>
+                                <td align="right">210</td>
+                            </tr>
+                            <tr>
+                                <td>July</td>
+                                <td align="right">138,000</td>
+                                <td align="right">280</td>
+                            </tr>
+                            <tr>
+                                <td>August</td>
+                                <td align="right">100,000</td>
+                                <td align="right">190</td>
+                            </tr>
+                            <tr>
+                                <td>September</td>
+                                <td align="right">108,000</td>
+                                <td align="right">205</td>
+                            </tr>
+                            <tr>
+                                <td>October</td>
+                                <td align="right">115,000</td>
+                                <td align="right">245</td>
+                            </tr>
+                            <tr>
+                                <td>November</td>
+                                <td align="right">136,000</td>
+                                <td align="right">265</td>
+                            </tr>
+                            <tr>
+                                <td>December</td>
+                                <td align="right">126,000</td>
+                                <td align="right">255</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="para" id="heisinger_1.0-ch05_s05_p46">You enter these data into a computer regression program and get the following results:</p>
+                <div class="informaltable" frame="none">
+                    <table cellpadding="0" cellspacing="0">
+                        <tbody>
+                            <tr>
+                                <td align="right"></td>
+                                <td align="right">Coefficients</td>
+                            </tr>
+                            <tr>
+                                <td align="right">
+<em class="emphasis">y</em>-intercept</td>
+                                <td align="right">24,626</td>
+                            </tr>
+                            <tr>
+                                <td align="right">
+<em class="emphasis">x</em> variable</td>
+                                <td align="right">401.86</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="para" id="heisinger_1.0-ch05_s05_p47"><em class="emphasis">Required:</em></p>
+                <ol class="orderedlist" id="heisinger_1.0-ch05_s05_l33" numeration="loweralpha">
+                    <li>Use the four steps of the high-low method to estimate total fixed costs per month and the variable cost per tax return prepared. State your results in the cost equation form Y = <em class="emphasis">f</em> + <em class="emphasis">v</em>X by filling in the dollar amounts for <em class="emphasis">f</em> and <em class="emphasis">v</em>.</li>
+                    <li>Use the five steps of the scattergraph method to estimate total fixed costs per month and the variable cost per tax return prepared. State your results in the cost equation form Y = <em class="emphasis">f</em> + <em class="emphasis">v</em>X by filling in the dollar amounts for <em class="emphasis">f</em> and <em class="emphasis">v</em>.</li>
+                    <li>Use the regression output given to develop the cost equation Y = <em class="emphasis">f</em> + <em class="emphasis">v</em>X by filling in the dollar amounts for <em class="emphasis">f</em> and <em class="emphasis">v</em>.</li>
+                    <li>Use the results of the high-low method (a), scattergraph method (b), and regression analysis (c) to estimate costs for 290 tax returns. (You will have three different answers—one for each method.) Which approach do you think is most accurate, and why?</li>
+                    <li>Marie likes the regression analysis approach and asks you to estimate costs for 800 tax returns using this approach (she plans to expand by opening another office and hiring additional employees). Calculate your estimate, and explain why your estimate might be misleading.</li>
+                </ol>
+            </li>
+            <li>
+                <p class="para"><strong class="emphasis bold">High-Low, Scattergraph, Regression Analysis, and Contribution Margin Income Statement.</strong> Eye Care, Inc., provides vision correction surgery for its patients. You are the accountant for Eye Care, and management has asked you to devise a way of accurately estimating company costs for planning and decision-making purposes. You believe that reviewing historical data for costs and number of surgeries is the best starting point. These data are as follows:</p>
+                <div class="informaltable" frame="all">
+                    <table cellpadding="0" cellspacing="0">
+                        <tbody>
+                            <tr>
+                                <td><strong class="emphasis bold">Reporting Period (Month)</strong></td>
+                                <td align="right"><strong class="emphasis bold">Total Costs</strong></td>
+                                <td align="right"><strong class="emphasis bold">Number of Surgeries</strong></td>
+                            </tr>
+                            <tr>
+                                <td>January</td>
+                                <td align="right">$208,000</td>
+                                <td align="right">54</td>
+                            </tr>
+                            <tr>
+                                <td>February</td>
+                                <td align="right">205,000</td>
+                                <td align="right">52</td>
+                            </tr>
+                            <tr>
+                                <td>March</td>
+                                <td align="right">217,000</td>
+                                <td align="right">55</td>
+                            </tr>
+                            <tr>
+                                <td>April</td>
+                                <td align="right">200,000</td>
+                                <td align="right">50</td>
+                            </tr>
+                            <tr>
+                                <td>May</td>
+                                <td align="right">232,000</td>
+                                <td align="right">62</td>
+                            </tr>
+                            <tr>
+                                <td>June</td>
+                                <td align="right">230,000</td>
+                                <td align="right">60</td>
+                            </tr>
+                            <tr>
+                                <td>July</td>
+                                <td align="right">226,000</td>
+                                <td align="right">57</td>
+                            </tr>
+                            <tr>
+                                <td>August</td>
+                                <td align="right">235,000</td>
+                                <td align="right">63</td>
+                            </tr>
+                            <tr>
+                                <td>September</td>
+                                <td align="right">252,000</td>
+                                <td align="right">71</td>
+                            </tr>
+                            <tr>
+                                <td>October</td>
+                                <td align="right">250,000</td>
+                                <td align="right">70</td>
+                            </tr>
+                            <tr>
+                                <td>November</td>
+                                <td align="right">245,000</td>
+                                <td align="right">66</td>
+                            </tr>
+                            <tr>
+                                <td>December</td>
+                                <td align="right">244,000</td>
+                                <td align="right">65</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="para" id="heisinger_1.0-ch05_s05_p48">You enter these data into a computer regression program and get the following results:</p>
+                <div class="informaltable" frame="none">
+                    <table cellpadding="0" cellspacing="0">
+                        <tbody>
+                            <tr>
+                                <td align="right"></td>
+                                <td align="right">Coefficients</td>
+                            </tr>
+                            <tr>
+                                <td align="right">
+<em class="emphasis">y</em>-intercept</td>
+                                <td align="right">75,403</td>
+                            </tr>
+                            <tr>
+                                <td align="right">
+<em class="emphasis">x</em> variable</td>
+                                <td align="right">2,536.77</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="para" id="heisinger_1.0-ch05_s05_p49"><em class="emphasis">Required:</em></p>
+                <ol class="orderedlist" id="heisinger_1.0-ch05_s05_l34" numeration="loweralpha">
+                    <li>Use the four steps of the high-low method to estimate total fixed costs per month, and the variable cost per surgery. State your results in the cost equation form Y = <em class="emphasis">f</em> + <em class="emphasis">v</em>X by filling in the dollar amounts for <em class="emphasis">f</em> and <em class="emphasis">v</em>.</li>
+                    <li>Use the five steps of the scattergraph method to estimate total fixed costs per month, and the variable cost per surgery. State your results in the cost equation form Y = <em class="emphasis">f</em> + <em class="emphasis">v</em>X by filling in the dollar amounts for <em class="emphasis">f</em> and <em class="emphasis">v</em>.</li>
+                    <li>Use the regression output given to develop the cost equation Y = <em class="emphasis">f</em> + <em class="emphasis">v</em>X by filling in the dollar amounts for <em class="emphasis">f</em> and <em class="emphasis">v</em>.</li>
+                    <li>Use the results of the high-low method (a), scattergraph method (b), and regression analysis (c), to estimate costs for 70 surgeries. (You will have three different answers—one for each method.) Which approach do you think is most accurate and why?</li>
+                    <li>Assume Eye Care charges $4,000 for each surgery performed. Use the regression analysis cost information (for 70 surgeries) to prepare a contribution margin income statement. (Hint: You will only have one line item for variable costs and one line item for fixed costs.)</li>
+                </ol>
+            </li>
+            <li>
+                <p class="para"><strong class="emphasis bold">Regression Analysis Using Excel (Appendix).</strong> Metal Products, Inc., produces metal storage sheds. The company’s manufacturing overhead costs tend to fluctuate from one month to the next, and management would like an accurate estimate of these costs for planning and decision-making purposes.</p>
+                <p class="para" id="heisinger_1.0-ch05_s05_p50">The company’s accounting staff recommends that costs be broken down into fixed and variable components. Because the production process is highly automated, most of the manufacturing overhead costs are related to machinery and equipment. The accounting staff agrees that reviewing historical data for costs and machine hours is the best starting point. Data for the past 18 months follow.</p>
+                <div class="informaltable" frame="all">
+                    <table cellpadding="0" cellspacing="0">
+                        <tbody>
+                            <tr>
+                                <td><strong class="emphasis bold">Reporting Period (Month)</strong></td>
+                                <td align="right"><strong class="emphasis bold">Total Overhead Costs</strong></td>
+                                <td align="right"><strong class="emphasis bold">Total Machine Hours</strong></td>
+                            </tr>
+                            <tr>
+                                <td>January</td>
+                                <td align="right">$695,000</td>
+                                <td align="right">3,875</td>
+                            </tr>
+                            <tr>
+                                <td>February</td>
+                                <td align="right">700,000</td>
+                                <td align="right">3,925</td>
+                            </tr>
+                            <tr>
+                                <td>March</td>
+                                <td align="right">665,000</td>
+                                <td align="right">2,788</td>
+                            </tr>
+                            <tr>
+                                <td>April</td>
+                                <td align="right">725,000</td>
+                                <td align="right">4,250</td>
+                            </tr>
+                            <tr>
+                                <td>May</td>
+                                <td align="right">655,000</td>
+                                <td align="right">2,775</td>
+                            </tr>
+                            <tr>
+                                <td>June</td>
+                                <td align="right">672,500</td>
+                                <td align="right">3,063</td>
+                            </tr>
+                            <tr>
+                                <td>July</td>
+                                <td align="right">687,500</td>
+                                <td align="right">3,338</td>
+                            </tr>
+                            <tr>
+                                <td>August</td>
+                                <td align="right">715,000</td>
+                                <td align="right">4,150</td>
+                            </tr>
+                            <tr>
+                                <td>September</td>
+                                <td align="right">625,000</td>
+                                <td align="right">2,500</td>
+                            </tr>
+                            <tr>
+                                <td>October</td>
+                                <td align="right">632,500</td>
+                                <td align="right">2,550</td>
+                            </tr>
+                            <tr>
+                                <td>November</td>
+                                <td align="right">650,000</td>
+                                <td align="right">2,563</td>
+                            </tr>
+                            <tr>
+                                <td>December</td>
+                                <td align="right">702,500</td>
+                                <td align="right">4,000</td>
+                            </tr>
+                            <tr>
+                                <td>January</td>
+                                <td align="right">730,000</td>
+                                <td align="right">4,025</td>
+                            </tr>
+                            <tr>
+                                <td>February</td>
+                                <td align="right">735,000</td>
+                                <td align="right">4,088</td>
+                            </tr>
+                            <tr>
+                                <td>March</td>
+                                <td align="right">697,500</td>
+                                <td align="right">2,900</td>
+                            </tr>
+                            <tr>
+                                <td>April</td>
+                                <td align="right">762,500</td>
+                                <td align="right">4,425</td>
+                            </tr>
+                            <tr>
+                                <td>May</td>
+                                <td align="right">687,500</td>
+                                <td align="right">2,888</td>
+                            </tr>
+                            <tr>
+                                <td>June</td>
+                                <td align="right">705,000</td>
+                                <td align="right">3,188</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="para" id="heisinger_1.0-ch05_s05_p51"><em class="emphasis">Required:</em></p>
+                <ol class="orderedlist" id="heisinger_1.0-ch05_s05_l35" numeration="loweralpha">
+                    <li>Use Excel to perform regression analysis. Provide a printout of the results.</li>
+                    <li>Use the regression output given to develop the cost equation Y = <em class="emphasis">f</em> + <em class="emphasis">v</em>X by filling in the dollar amounts for <em class="emphasis">f</em> and <em class="emphasis">v</em>.</li>
+                    <li>Use the results of the regression analysis to estimate costs for 3,750 machine hours.</li>
+                    <li>Management is considering plans to expand by opening several new facilities and asks you to estimate costs for 22,000 machine hours. Calculate your estimate, and explain why this estimate may be misleading.</li>
+                    <li>What can be done to improve the estimate made in part d?</li>
+                </ol>
+            </li>
+        </ol>
+        <p class="simpara">One Step Further: Skill-Building Cases</p>
+        <ol class="orderedlist" id="heisinger_1.0-ch05_s05_l36" start="47">
+            <li>
+                <p class="para"><strong class="emphasis bold">Internet Project: Variable and Fixed Costs.</strong> Using the Internet, find the annual report of one retail company and one manufacturing company. Print out each company’s income statement. (Hint: The income statement is often called the <em class="emphasis">statement of operations</em> or <em class="emphasis">statement of earnings</em>.)</p>
+                <p class="para" id="heisinger_1.0-ch05_s05_p52"><em class="emphasis">Required:</em></p>
+                <ol class="orderedlist" id="heisinger_1.0-ch05_s05_l37" numeration="loweralpha">
+                    <li>Review each income statement, and provide an analysis of which operating costs are likely to be variable and which are likely to be fixed. Include copies of both income statements when submitting your answer.</li>
+                    <li>How would you expect a retail company’s mix of variable and fixed operating costs to differ from that of a manufacturing company?</li>
+                    <li>How might the managers of these companies use cost behavior information?</li>
+                </ol>
+            </li>
+            <li>
+                <p class="para"><strong class="emphasis bold">Group Activity: Identifying Variable and Fixed Costs.</strong> To complete the following requirements, form groups of two to four students.</p>
+                <p class="para" id="heisinger_1.0-ch05_s05_p53"><em class="emphasis">Required:</em></p>
+                <ol class="orderedlist" id="heisinger_1.0-ch05_s05_l38" numeration="loweralpha">
+                    <li>Each group should select a product that is easy to manufacture.</li>
+                    <li>Prepare a list of materials, labor, and other resources needed to make the product.</li>
+                    <li>Using the list prepared in requirement b, identify whether the costs associated with each item are variable, fixed, or mixed.</li>
+                    <li>As a manager for this company, why would you want to know whether costs are variable, fixed, or mixed?</li>
+                </ol>
+            </li>
+            <li>
+                <p class="para"><strong class="emphasis bold">Cost Behavior at</strong> Best Buy<strong class="emphasis bold">.</strong> The following condensed income statement is for <strong class="emphasis bold">Best Buy Co., Inc.</strong>, a large retailer of consumer electronics.</p>
+                <div class="informalfigure large">
+                    <img src="section_09/f2822a2a9aa913b603d1e91ae66c6136.jpg">
+                </div>
+                <p class="para" id="heisinger_1.0-ch05_s05_p54"><em class="emphasis">Required:</em></p>
+                <p class="para" id="heisinger_1.0-ch05_s05_p55">Assume that cost of goods sold comprises only variable costs, and selling and administrative expenses are all fixed costs. Also assume that <strong class="emphasis bold">Best Buy</strong> expects sales to grow by 10 percent for the year ended March 3, 2012.</p>
+                <ol class="orderedlist" id="heisinger_1.0-ch05_s05_l39" numeration="loweralpha">
+                    <li>Calculate expected operating income for the year ended March 3, 2012 assuming the company is still within the relevant range of activity.</li>
+                    <li>Calculate the expected percent increase in operating income from the year ended February 26, 2011, to the year ended March 3, 2012.</li>
+                    <li>Why is the percent increase in operating income higher than the percent increase in sales?</li>
+                    <li>Is the assumption that all selling and administrative expenses are fixed a reasonable assumption? Explain.</li>
+                </ol>
+            </li>
+            <li>
+                <p class="para"><strong class="emphasis bold">Fixed Costs at</strong> United Airlines<strong class="emphasis bold">.</strong> Review <a class="xref" href="heisinger_1.0-ch05_s01#heisinger_1.0-ch05_s01_s02_n01">Note 5.4 "Business in Action 5.1"</a>.</p>
+                <p class="para" id="heisinger_1.0-ch05_s05_p56"><em class="emphasis">Required:</em></p>
+                <ol class="orderedlist" id="heisinger_1.0-ch05_s05_l40" numeration="loweralpha">
+                    <li>What is meant by the term <em class="emphasis">fixed cost</em>?</li>
+                    <li>Which costs at <strong class="emphasis bold">United Airlines</strong> were identified as fixed costs?</li>
+                    <li>How might <strong class="emphasis bold">United Airlines</strong> reduce its fixed costs? Be specific.</li>
+                </ol>
+            </li>
+        </ol>
+        <p class="simpara">Comprehensive Case</p>
+        <ol class="orderedlist" id="heisinger_1.0-ch05_s05_l41" start="51">
+            <li>
+                <p class="para"><strong class="emphasis bold">Ethics: Manipulating Data to Establish a Budget (Appendix).</strong> Healthy Bar, Inc., produces energy bars for sports enthusiasts. The company’s fiscal year ends on December 31. The production manager, Jim Wallace, is establishing a cost budget for the production department for each month of this coming quarter (January through March). At the end of March, Jim will be evaluated based on his ability to meet the budget for the three months ending March 31. In fact, Jim will receive a significant bonus if actual costs are below budgeted costs for the quarter.</p>
+                <p class="para" id="heisinger_1.0-ch05_s05_p57">The production budget is typically established based on data from the last 18 months. These data are as follows:</p>
+                <div class="informaltable" frame="all">
+                    <table cellpadding="0" cellspacing="0">
+                        <tbody>
+                            <tr>
+                                <td><strong class="emphasis bold">Reporting Period (Month)</strong></td>
+                                <td align="right"><strong class="emphasis bold">Total Overhead Costs</strong></td>
+                                <td align="right"><strong class="emphasis bold">Total Machine Hours</strong></td>
+                            </tr>
+                            <tr>
+                                <td>July</td>
+                                <td align="right">$695,000</td>
+                                <td align="right">3,410</td>
+                            </tr>
+                            <tr>
+                                <td>August</td>
+                                <td align="right">700,000</td>
+                                <td align="right">3,454</td>
+                            </tr>
+                            <tr>
+                                <td>September</td>
+                                <td align="right">665,000</td>
+                                <td align="right">2,453</td>
+                            </tr>
+                            <tr>
+                                <td>October</td>
+                                <td align="right">725,000</td>
+                                <td align="right">3,740</td>
+                            </tr>
+                            <tr>
+                                <td>November</td>
+                                <td align="right">655,000</td>
+                                <td align="right">2,442</td>
+                            </tr>
+                            <tr>
+                                <td>December</td>
+                                <td align="right">672,500</td>
+                                <td align="right">2,695</td>
+                            </tr>
+                            <tr>
+                                <td>January</td>
+                                <td align="right">687,500</td>
+                                <td align="right">2,937</td>
+                            </tr>
+                            <tr>
+                                <td>February</td>
+                                <td align="right">715,000</td>
+                                <td align="right">3,652</td>
+                            </tr>
+                            <tr>
+                                <td>March</td>
+                                <td align="right">625,000</td>
+                                <td align="right">2,200</td>
+                            </tr>
+                            <tr>
+                                <td>April</td>
+                                <td align="right">632,500</td>
+                                <td align="right">2,244</td>
+                            </tr>
+                            <tr>
+                                <td>May</td>
+                                <td align="right">650,000</td>
+                                <td align="right">2,255</td>
+                            </tr>
+                            <tr>
+                                <td>June</td>
+                                <td align="right">702,500</td>
+                                <td align="right">3,520</td>
+                            </tr>
+                            <tr>
+                                <td>July</td>
+                                <td align="right">730,000</td>
+                                <td align="right">3,542</td>
+                            </tr>
+                            <tr>
+                                <td>August</td>
+                                <td align="right">735,000</td>
+                                <td align="right">3,597</td>
+                            </tr>
+                            <tr>
+                                <td>September</td>
+                                <td align="right">697,500</td>
+                                <td align="right">2,552</td>
+                            </tr>
+                            <tr>
+                                <td>October</td>
+                                <td align="right">762,500</td>
+                                <td align="right">3,894</td>
+                            </tr>
+                            <tr>
+                                <td>November</td>
+                                <td align="right">687,500</td>
+                                <td align="right">2,541</td>
+                            </tr>
+                            <tr>
+                                <td>December</td>
+                                <td align="right">705,000</td>
+                                <td align="right">2,805</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="para" id="heisinger_1.0-ch05_s05_p58">You are the accountant who assists Jim in preparing an estimate of production costs for the next three months. You intend to use regression analysis to estimate costs, as was done in the past. Jim expects that 3,100 machine hours will be used in January, 3,650 machine hours in February, and 2,850 machine hours in March.</p>
+                <p class="para" id="heisinger_1.0-ch05_s05_p59">Jim approaches you and asks that you add $100,000 to production costs for each of the past 18 months before running the regression analysis. As he puts it, “After all, management always takes my proposed budgets and reduces them by about 10 percent. This is my way of leveling the playing field!”</p>
+                <p class="para" id="heisinger_1.0-ch05_s05_p60"><em class="emphasis">Required:</em></p>
+                <ol class="orderedlist" id="heisinger_1.0-ch05_s05_l42" numeration="loweralpha">
+                    <li>
+                    <p class="para">Use Excel to perform regression analysis using the historical data provided.</p>
+                    <ol class="orderedlist" id="heisinger_1.0-ch05_s05_l43" numeration="arabic">
+                        <li>Submit a printout of the results.</li>
+                        <li>Use the regression output to develop the cost equation Y = <em class="emphasis">f</em> + <em class="emphasis">v</em>X by filling in the dollar amounts for <em class="emphasis">f</em> and <em class="emphasis">v</em>.</li>
+                        <li>Calculate estimated production costs for January, February, and March. Also provide a total for the three months.</li>
+                    </ol>
+                    </li>
+                    <li>
+                    <p class="para">Use Excel to perform regression analysis after adding $100,000 to production costs for each of the past 18 months, as Jim requested.</p>
+                    <ol class="orderedlist" id="heisinger_1.0-ch05_s05_l44" numeration="arabic">
+                        <li>Submit a printout of the results.</li>
+                        <li>Use the regression output to develop the cost equation Y = <em class="emphasis">f</em> + <em class="emphasis">v</em>X by filling in the dollar amounts for <em class="emphasis">f</em> and <em class="emphasis">v</em>.</li>
+                        <li>Calculate estimated production costs for January, February, and March. Also provide a total for the three months.</li>
+                    </ol>
+                    </li>
+                    <li>Why did Jim ask you to add $100,000 to production costs for each of the past 18 months?</li>
+                    <li>How should you handle Jim’s request? (If necessary, review the presentation of ethics in <a class="xref" href="heisinger_1.0-ch01#heisinger_1.0-ch01">Chapter 1 "What Is Managerial Accounting?"</a> for additional information.)</li>
+                </ol>
+            </li>
+        </ol>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s09-04-the-relevant-range-and-nonline.html"><img src="shared/images/batch-left.png"></a> <a href="s09-04-the-relevant-range-and-nonline.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s10-00-how-is-cost-volume-profit-anal.html">Next Section</a> <a href="s10-00-how-is-cost-volume-profit-anal.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  
+</body>
+</html>
